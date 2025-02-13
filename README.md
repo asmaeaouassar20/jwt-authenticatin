@@ -5,9 +5,9 @@
 
 ### On exécute la requête suivante pour enregistrer un nouveau utilisateur (méthode Post)
 <img src="https://github.com/user-attachments/assets/37b65aba-015d-42d5-9baf-3d20803cda07">
-
-Dans le cas de 'Register', le filtre 'AppFilter' s'applique également<br>
-(voir la requête INSERT -register-)
+<br>
+Dans le cas de 'Register', le filtre 'AppFilter' s'applique également <br>
+(voir la requête INSERT -register-) <br>
 <img src="https://github.com/user-attachments/assets/beb8ef33-d6e7-4fd4-9045-25ee031a0be4">
 
 
@@ -30,7 +30,7 @@ Le token qu'on doit envoyé avec les requêtes à venir
 ### Accès à une autres API après 'login'
 **cas : No Auth**
 <img src="https://github.com/user-attachments/assets/f17626da-a63a-4f78-9bc1-df4d45febb08">
-Le filter s'applique également, et puisque on envoit aucun token, alors on obtient le résultat suivant
+Le filter s'applique également, et puisque on n'envoit aucun token, alors on obtient le résultat suivant
 <img src="https://github.com/user-attachments/assets/e284d4b1-e966-4054-a6f3-862063f73604">
 <br>
 **cas : with Bearer Token -Expired token**
