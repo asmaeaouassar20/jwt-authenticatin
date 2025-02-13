@@ -39,13 +39,9 @@ Le filter s'applique également, et puisque on envoit aucun token, alors on obti
 <br>
 **cas : with Bearer Token -invalid token**
 <img src="https://github.com/user-attachments/assets/284d0769-05d8-41e7-9d48-a5009d1bb6c8">
-
-
-
-
-
-
-
-
-
+<br>
+**cas : with Bearer Token -valid token**
+<img src="https://github.com/user-attachments/assets/89b625e9-4089-4e10-8226-3ee10809a409">
+<img src="https://github.com/user-attachments/assets/f30c0b47-0a0e-4106-9f0c-c6ff9a5ebd42">
+<img src="https://github.com/user-attachments/assets/11a9e128-5444-457b-a5a6-ea1e3f73a134">
 
