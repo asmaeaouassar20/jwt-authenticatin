@@ -1,5 +1,13 @@
 ## Utilisation de JWT pour l'authentification
 
+------------------------------------------------------------------
+1. On enregistre un nouveau utilisateur dans la base de donnée (Register)
+2. Si on accède à "welcome" on obtient le status 403 (ce qui veut dire que l'accès est réfusé) car on n'a envoyé aucun token avec la requête
+3. Si on se connecte avec des informations non valides on aura un status 400 ( BAD_REQUEST )
+4. Si on se connecte avec des informatiosn correctes, un token sera généré
+5. Maintenant on peut accéder à "welocome" si et seulement si on fournit le token (token valide) généré pendant la connexion avant son expiration
+------------------------------------------------------------------
+
 ### Notre table 'student' est vide au début
 <img src="https://github.com/user-attachments/assets/e0d8e077-7bb9-4c9c-92f8-5a9cf946281b">
 
@@ -11,7 +19,7 @@ Dans le cas de 'Register', le filtre 'AppFilter' s'applique également <br>
 <img src="https://github.com/user-attachments/assets/beb8ef33-d6e7-4fd4-9045-25ee031a0be4">
 
 
-### L'utilisateur s'ajoute dans la table de la base de données
+### L'utilisateur s'ajoute dans la table de la base de données avec un mot de passe crypté
 <img src="https://github.com/user-attachments/assets/fc07cba2-6a19-421e-9f64-1e1776241f95">
 
 ### Connexion
@@ -24,7 +32,7 @@ Si la connexion échoue, on envoie un message d'erreur dans le body de la répon
 <img src="https://github.com/user-attachments/assets/0b2b7a44-2786-4ebe-9a38-0b00a83de9a8">
 
 SI la connexion réussie, on envoie le token généré<br>
-Le token qu'on doit envoyé avec les requêtes à venir
+C'est le token qu'on doit envoyé avec les requêtes à venir
 <img src="https://github.com/user-attachments/assets/7c3d28a0-b4f1-4f63-989a-61c8e8af9696">
 
 ### Accès à une autres API après 'login'
